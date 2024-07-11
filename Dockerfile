@@ -1,5 +1,5 @@
 # Use an official OpenJDK runtime as a parent image
-FROM mcr.microsoft.com/openjdk/jdk:21-ubuntu
+FROM mcr.microsoft.com/openjdk/jdk:17-ubuntu
 
 # Set the working directory in the container
 WORKDIR /app
@@ -15,4 +15,3 @@ ENTRYPOINT ["java", "-jar", "/app/renaissance.jar"]
 
 # By default, run all benchmarks
 CMD ["--raw-list"]
-
