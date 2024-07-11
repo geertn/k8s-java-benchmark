@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y wget
 RUN wget https://github.com/renaissance-benchmarks/renaissance/releases/download/v0.15.0/renaissance-gpl-0.15.0.jar && mv renaissance-gpl-0.15.0.jar renaissance.jar
 
 # Set the entry point to run the benchmark
-ENTRYPOINT ["java", "-jar", "/app/renaissance/renaissance.jar"]
+ENTRYPOINT ["java", "-jar", "/app/renaissance.jar"]
 
 # By default, run all benchmarks
 CMD ["--raw-list"]
